@@ -1,0 +1,20 @@
+.jumbotron{
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  &__list{
+    transform: translateY(100%);
+  }
+  &__item{
+    writing-mode:vertical-lr;
+    width: 260px;
+    height: 260px;
+    color: white;
+    font-size: 28px;
+    background-color: #3F5D45 ;
+    line-height: 260px;
+    &:hover{
+      color: black;
+      background-color: #FFE180;
+    }
+  }
+}
