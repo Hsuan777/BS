@@ -1,37 +1,87 @@
 body {
   font-size: 16px;
-  color: black;
+  color: #3F5D45;
   background-color: #EEE;
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.jumbotron {
+.index-jumbotron {
+  margin-bottom: 200px;
   color: white;
   background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
 }
 
-.jumbotron__list {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+.index-jumbotron__list {
+  -webkit-transform: translateY(85%);
+          transform: translateY(85%);
 }
 
-.jumbotron__item {
+@media (max-width: 576px) {
+  .index-jumbotron__list {
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
+}
+
+.index-jumbotron__item {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   color: white;
   font-size: 28px;
-  background-color: rgba(63, 93, 69, 0.6);
+  background-color: rgba(63, 93, 69, 0.5);
   position: relative;
 }
 
-.jumbotron__item:hover {
+.index-jumbotron__item:hover {
   color: black;
-  background-color: #ffe180;
+  background-color: #FFE180;
   text-decoration: none;
-  z-index: 99;
+}
+
+.index-jumbotron__item::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+}
+
+.index-about {
+  background-color: #EEE;
+}
+
+.index-about__title {
+  color: #3F5D45;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: relative;
+}
+
+.index-about__title:first-child::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 75px;
+  background-color: #3F5D45;
+  top: 100px;
+  right: 15px;
+}
+
+.index-about__text {
+  color: #8DA291;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
 /*# sourceMappingURL=all.css.map */
