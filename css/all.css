@@ -92,6 +92,12 @@ body {
   position: relative;
 }
 
+.index-about__title span {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+}
+
 .index-about__title:first-child::after {
   position: absolute;
   content: "";

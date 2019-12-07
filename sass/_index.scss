@@ -66,6 +66,10 @@
     color: $primary-color;
     writing-mode:vertical-rl;
     position: relative;
+    span{
+      // transform: rotate(120deg);
+      writing-mode: horizontal-tb;
+    }
     &:first-child{
       &::after{
         position: absolute;
