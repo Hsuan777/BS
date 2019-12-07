@@ -57,7 +57,31 @@ body {
 }
 
 .index-about {
+  background-color: #EAF0ED;
+  position: relative;
+  z-index: -99;
+}
+
+.index-about::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 10%;
+  top: 0;
+  left: 0;
   background-color: #EEE;
+  z-index: -1;
+}
+
+.index-about::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  left: 0;
+  background-color: #EEE;
+  z-index: -1;
 }
 
 .index-about__title {
@@ -74,8 +98,8 @@ body {
   width: 2px;
   height: 75px;
   background-color: #3F5D45;
-  top: 100px;
-  right: 15px;
+  top: 45%;
+  right: 40%;
 }
 
 .index-about__text {
