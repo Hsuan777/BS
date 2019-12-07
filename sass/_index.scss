@@ -64,7 +64,7 @@
   }
   &__title{
     color: $primary-color;
-    writing-mode:vertical-rl;
+    writing-mode:vertical-lr;
     position: relative;
     span{
       // transform: rotate(120deg);
@@ -85,6 +85,15 @@
   &__text{
     color: $secondary-color;
     writing-mode:vertical-rl;
+
+  }
+}
+.index-footer{
+  &__mail{
+    background-color: $primary-color;
+  }
+  &__info{
+    background-color: $secondary-bg-color;
 
   }
 }
