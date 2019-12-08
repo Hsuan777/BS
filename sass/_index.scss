@@ -62,6 +62,26 @@
     background-color:$primary-bg-color ;
     z-index: -1;
   }
+  &__text{
+    color: $secondary-color;
+    writing-mode:vertical-rl;
+
+  }
+}
+.index-footer{
+  &__mail{
+    background-color: $primary-color;
+  }
+  &__info{
+    background-color: $secondary-bg-color;
+    &__title{
+      writing-mode:vertical-rl;
+
+    }
+  }
+}
+
+.section{
   &__title{
     color: $primary-color;
     writing-mode:vertical-lr;
@@ -77,23 +97,9 @@
         width: 2px;
         height: 75px;
         background-color:$primary-color ;
-        top: 45%;
+        top: 50%;
         right:40%;
       }
     }
-  }
-  &__text{
-    color: $secondary-color;
-    writing-mode:vertical-rl;
-
-  }
-}
-.index-footer{
-  &__mail{
-    background-color: $primary-color;
-  }
-  &__info{
-    background-color: $secondary-bg-color;
-
   }
 }
