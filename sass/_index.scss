@@ -6,10 +6,13 @@
     background-position: center center;
     background-size: cover;
     position: relative;
-  &__list{
-    transform: translateY(85%);
     @include sm{
-      transform: translateY(125%);
+      margin-bottom: 250px;
+    }
+  &__list{
+    transform: translateY(100%);
+    @include sm{
+      transform: translateY(120%);
     }
   }
   &__item{
@@ -50,7 +53,6 @@
     left: 0;
     background-color:$primary-bg-color ;
     z-index: -1;
-
   }
   &::after{
     position: absolute;
@@ -65,7 +67,11 @@
   &__text{
     color: $secondary-color;
     writing-mode:vertical-rl;
-
+    max-height: 250px;
+    line-height: 2;
+    @include sm{
+      writing-mode:horizontal-tb;
+    }
   }
 }
 .index-footer{
@@ -86,19 +92,31 @@
     color: $primary-color;
     writing-mode:vertical-lr;
     position: relative;
-    span{
-      // transform: rotate(120deg);
-      writing-mode: horizontal-tb;
+    line-height: 0;
+    @include sm{
+      writing-mode:horizontal-tb;
     }
-    &:first-child{
+    span{
+      writing-mode: horizontal-tb;
+      line-height: 1;
+    }
+    &__after{
+      position: relative;
       &::after{
         position: absolute;
         content: "";
         width: 2px;
-        height: 75px;
+        height: 70px;
         background-color:$primary-color ;
-        top: 50%;
-        right:40%;
+        top: 0;
+        right:0;
+        transform: translate(70%, 20%);
+        @include sm{
+          width: 70px;
+          height: 2px;
+          top: 50%;
+          right:-35px;
+        }
       }
     }
   }
