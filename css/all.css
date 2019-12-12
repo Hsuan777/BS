@@ -23,14 +23,14 @@ body {
 }
 
 .index-jumbotron__list {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
 }
 
 @media (max-width: 576px) {
   .index-jumbotron__list {
-    -webkit-transform: translateY(60%);
-            transform: translateY(60%);
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
   }
 }
 
@@ -40,11 +40,13 @@ body {
           writing-mode: vertical-lr;
   color: goldenrod;
   font-size: 28px;
+  max-width: 150px;
   background-size: cover;
   background-position: center center;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: -1;
 }
 
 .index-jumbotron__item:nth-child(1) {
@@ -59,8 +61,23 @@ body {
   background-image: url("https://picsum.photos/800/600?random=3");
 }
 
+.index-jumbotron__item__link {
+  color: white;
+  z-index: 99;
+}
+
 .index-jumbotron__item:hover {
   color: white;
+  text-decoration: none;
+}
+
+.index-jumbotron__item:hover::after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.index-jumbotron__item:hover .index-jumbotron__item__link {
+  color: #FFE180;
+  z-index: 99;
   text-decoration: none;
 }
 
@@ -68,7 +85,7 @@ body {
   position: absolute;
   content: "";
   top: -1px;
-  right: -50px;
+  right: 35%;
   bottom: -1px;
   border-left: 50px solid  transparent;
   border-right: 50px solid  transparent;
@@ -79,13 +96,11 @@ body {
 .index-jumbotron__item::after {
   position: absolute;
   content: "";
-  top: -1px;
-  left: -50px;
-  bottom: -1px;
-  border-left: 50px solid  transparent;
-  border-right: 50px solid  transparent;
-  border-bottom: 50px solid #EEE;
-  z-index: 99;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .index-about {
