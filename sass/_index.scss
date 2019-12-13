@@ -111,6 +111,19 @@
     transform: translateY(-50px);
   }
 }
+.index-about__mobile{
+  .section__title{
+    line-height: 1.3;
+    letter-spacing: 12px;
+    // &:nth-child(2){
+    //   letter-spacing: 14px;
+    // }
+  }
+  .index-about__text{
+    background-color: $secondary-bg-color;
+  }
+}
+
 .index-footer{
   &__mail{
     background-color: $primary-color;
