@@ -40,7 +40,7 @@ body {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   color: goldenrod;
-  font-size: 28px;
+  font-size: 32px;
   max-width: 150px;
   background-size: cover;
   background-position: center center;
@@ -63,12 +63,14 @@ body {
 }
 
 .index-jumbotron__item__link {
-  color: white;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("https://picsum.photos/800/600?random=1");
   z-index: 99;
 }
 
 .index-jumbotron__item:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -101,7 +103,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .index-about {
