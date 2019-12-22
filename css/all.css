@@ -182,6 +182,10 @@ body {
   border-radius: 0 0 3px 3px;
 }
 
+.index-porduct__item__text {
+  font-size: 28px;
+}
+
 .index-porduct .item-coffee::before {
   content: "本周咖啡";
   background-color: rgba(32, 22, 3, 0.8);
