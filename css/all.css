@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 16px;
   color: #3F5D45;
@@ -137,7 +138,8 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   max-height: 350px;
-  line-height: 2;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 @media (max-width: 576px) {
@@ -160,6 +162,27 @@ body {
 
 .index-about__mobile .index-about__text {
   background-color: #EAF0ED;
+}
+
+.index-porduct__item {
+  position: relative;
+}
+
+.index-porduct__item::before {
+  position: absolute;
+  content: "推薦景點";
+  top: 0;
+  left: 20px;
+  width: 30px;
+  padding: 7px;
+  color: white;
+  background-color: rgba(63, 93, 69, 0.8);
+  border-radius: 0 0 3px 3px;
+}
+
+.index-porduct .item-coffee::before {
+  content: "本周咖啡";
+  background-color: rgba(32, 22, 3, 0.8);
 }
 
 .index-footer__mail {

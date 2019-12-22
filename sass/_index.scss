@@ -102,7 +102,8 @@
     color: $secondary-color;
     writing-mode:vertical-rl;
     max-height: 350px;
-    line-height: 2;
+    font-size: 20px;
+    line-height: 1.5;
     @include sm{
       writing-mode:horizontal-tb;
     }
@@ -121,6 +122,28 @@
   }
   .index-about__text{
     background-color: $secondary-bg-color;
+  }
+}
+.index-porduct{
+  &__item{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "推薦景點";
+      top: 0;
+      left: 20px;
+      width: 30px;
+      padding: 7px;
+      color: white;
+      background-color: rgba(63, 93, 69,0.8);
+      border-radius: 0 0 3px 3px;
+    }
+  }
+  .item-coffee{
+    &::before{
+      content: "本周咖啡";
+      background-color: rgba(32, 22, 3,0.8)	;
+    }
   }
 }
 
