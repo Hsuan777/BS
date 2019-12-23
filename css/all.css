@@ -63,7 +63,7 @@ body {
 }
 
 .index-jumbotron__item__link {
-  color: transparent;
+  color: white;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: url("https://picsum.photos/800/600?random=1");
@@ -103,7 +103,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(63, 93, 69, 0.5);
 }
 
 .index-about {
@@ -184,6 +184,10 @@ body {
 
 .index-porduct__item__text {
   font-size: 28px;
+}
+
+.index-porduct .item-coffee {
+  color: rgba(32, 22, 3, 0.8);
 }
 
 .index-porduct .item-coffee::before {
