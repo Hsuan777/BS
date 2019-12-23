@@ -202,4 +202,11 @@
       }
     }
   }
+  &__product-title{
+    &__after{
+      &::after{
+        background-color:white ;
+      }
+    }
+  }
 }

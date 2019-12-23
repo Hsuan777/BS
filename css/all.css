@@ -258,4 +258,8 @@ body {
     right: -35px;
   }
 }
+
+.section__product-title__after::after {
+  background-color: white;
+}
 /*# sourceMappingURL=all.css.map */
