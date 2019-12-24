@@ -6,10 +6,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.index-jumbotron {
-  margin-bottom: 220px;
-  color: white;
-  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+.inner-banner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -17,25 +14,31 @@ body {
   z-index: 999;
 }
 
+.inner-banner__index {
+  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  margin-bottom: 220px;
+  color: white;
+}
+
 @media (max-width: 576px) {
-  .index-jumbotron {
+  .inner-banner__index {
     margin-bottom: 250px;
   }
 }
 
-.index-jumbotron__list {
+.inner-banner__index__list {
   -webkit-transform: translateY(85%);
           transform: translateY(85%);
 }
 
 @media (max-width: 576px) {
-  .index-jumbotron__list {
+  .inner-banner__index__list {
     -webkit-transform: translateY(125%);
             transform: translateY(125%);
   }
 }
 
-.index-jumbotron__item {
+.inner-banner__index__item {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -50,19 +53,19 @@ body {
   z-index: -1;
 }
 
-.index-jumbotron__item:nth-child(1) {
+.inner-banner__index__item:nth-child(1) {
   background-image: url("https://picsum.photos/800/600?random=1");
 }
 
-.index-jumbotron__item:nth-child(2) {
+.inner-banner__index__item:nth-child(2) {
   background-image: url("https://picsum.photos/800/600?random=2");
 }
 
-.index-jumbotron__item:nth-child(3) {
+.inner-banner__index__item:nth-child(3) {
   background-image: url("https://picsum.photos/800/600?random=3");
 }
 
-.index-jumbotron__item__link {
+.inner-banner__index__item__link {
   color: white;
   -webkit-background-clip: text;
   background-clip: text;
@@ -70,21 +73,21 @@ body {
   z-index: 99;
 }
 
-.index-jumbotron__item:hover {
+.inner-banner__index__item:hover {
   text-decoration: none;
 }
 
-.index-jumbotron__item:hover::after {
+.inner-banner__index__item:hover::after {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.index-jumbotron__item:hover .index-jumbotron__item__link {
+.inner-banner__index__item:hover .inner-banner__index__item__link {
   color: #FFE180;
   z-index: 99;
   text-decoration: none;
 }
 
-.index-jumbotron__item::before {
+.inner-banner__index__item::before {
   position: absolute;
   content: "";
   top: -1px;
@@ -96,7 +99,7 @@ body {
   z-index: 99;
 }
 
-.index-jumbotron__item::after {
+.inner-banner__index__item::after {
   position: absolute;
   content: "";
   top: 0;
@@ -106,107 +109,12 @@ body {
   background-color: rgba(63, 93, 69, 0.5);
 }
 
-.index-about {
-  background-color: #EAF0ED;
-  position: relative;
-  z-index: -99;
+.inner-banner__product {
+  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
 }
 
-.index-about::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 5%;
-  top: 0;
-  left: 0;
-  background-color: #EEE;
-  z-index: -1;
-}
-
-.index-about::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 10%;
-  bottom: 0;
-  left: 0;
-  background-color: #EEE;
-  z-index: -1;
-}
-
-.index-about__text {
-  color: #8DA291;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  max-height: 350px;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-@media (max-width: 576px) {
-  .index-about__text {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-  }
-}
-
-.index-about .section__title {
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-}
-
-.index-about__mobile .section__title {
-  line-height: 1.3;
-  letter-spacing: 12px;
-}
-
-.index-about__mobile .index-about__text {
-  background-color: #EAF0ED;
-}
-
-.index-porduct__item {
-  position: relative;
-}
-
-.index-porduct__item::before {
-  position: absolute;
-  content: "推薦景點";
-  top: 0;
-  left: 20px;
-  width: 30px;
-  padding: 7px;
-  color: white;
-  background-color: rgba(63, 93, 69, 0.8);
-  border-radius: 0 0 3px 3px;
-}
-
-.index-porduct__item__text {
-  font-size: 28px;
-}
-
-.index-porduct .item-coffee {
-  color: rgba(32, 22, 3, 0.8);
-}
-
-.index-porduct .item-coffee::before {
-  content: "本周咖啡";
-  background-color: rgba(32, 22, 3, 0.8);
-}
-
-.index-footer__mail {
-  background-color: #3F5D45;
-}
-
-.index-footer__info {
-  background-color: #EAF0ED;
-}
-
-.index-footer__info__title {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+.inner-banner__product .section__title--after::after {
+  background-color: white;
 }
 
 .section__title {
@@ -234,11 +142,11 @@ body {
   line-height: 1;
 }
 
-.section__title__after {
+.section__title--after {
   position: relative;
 }
 
-.section__title__after::after {
+.section__title--after::after {
   position: absolute;
   content: "";
   width: 2px;
@@ -251,7 +159,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  .section__title__after::after {
+  .section__title--after::after {
     width: 70px;
     height: 2px;
     top: 50%;
@@ -259,7 +167,96 @@ body {
   }
 }
 
-.section__product-title__after::after {
-  background-color: white;
+.section__index-description {
+  background-color: #EAF0ED;
+  position: relative;
+  z-index: -99;
+}
+
+.section__index-description::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  background-color: #EEE;
+  z-index: -1;
+}
+
+.section__index-description::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  background-color: #EEE;
+  z-index: -1;
+}
+
+.section__index-description__text {
+  color: #8DA291;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  max-height: 350px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .section__index-description__text {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.section__index-description .section__title {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.section__index-description__mobile .section__title {
+  line-height: 1.3;
+  letter-spacing: 12px;
+}
+
+.inner-porduct__item {
+  position: relative;
+}
+
+.inner-porduct__item::before {
+  position: absolute;
+  content: "推薦景點";
+  top: 0;
+  left: 20px;
+  width: 30px;
+  padding: 7px;
+  color: white;
+  background-color: rgba(63, 93, 69, 0.8);
+  border-radius: 0 0 3px 3px;
+}
+
+.inner-porduct__item__text {
+  font-size: 28px;
+}
+
+.inner-porduct .item-coffee {
+  color: rgba(32, 22, 3, 0.8);
+}
+
+.inner-porduct .item-coffee::before {
+  content: "本周咖啡";
+  background-color: rgba(32, 22, 3, 0.8);
+}
+
+.inner-footer__mail {
+  background-color: #3F5D45;
+}
+
+.inner-footer__info {
+  background-color: #EAF0ED;
 }
 /*# sourceMappingURL=all.css.map */

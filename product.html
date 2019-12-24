@@ -50,11 +50,11 @@
   </header>
 
   <main>
-    <div class="index-jumbotron jumbotron jumbotron-fluid">
+    <div class="inner-banner inner-banner__product jumbotron jumbotron-fluid">
       <div class="container">
         <div class="d-flex justify-content-end">
           <h1 class="display-4 section__title order-1 text-light">騎車<span
-              class="section__title__after section__product-title__after"></span></h1>
+              class="section__title--after"></span></h1>
           <h2 class="section__title text-light pt-5">是不需要理由的 <span>!</span> </h2>
         </div>
       </div>
@@ -62,59 +62,82 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-            <div class="btn-group-vertical">
-              <button class="btn btn-secondary">景點類別</button>
-              <button type="button" class="btn btn-secondary">北部</button>
-              <button type="button" class="btn btn-secondary">中部</button>
-              <button type="button" class="btn btn-secondary">南部</button>
+          <div class="col-md-3 mt-3">
+            <div class="list-group text-center" id="list-tab" role="tablist">
+              <p class="list-group-item bg-info text-light">景點區域</p>
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">北部</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">中部</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">南部</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">東部</a>
             </div>
           </div>
           <div class="col-md-9">
-            <section>
-              <div class="index-porduct ">
-                <div class="">
-                  <div class="row justify-content-center">
-                    <div class="col-md-4 mt-3">
-                      <div class="card index-porduct__item">
-                        <img src="https://picsum.photos/800/600?random=1" class="card-img-top" alt="...">
-                        <div class="card-body p-0 border-bottom">
-                          <div class="d-flex ">
-                            <p class="card-text pt-3 mx-auto index-porduct__item__text">不厭亭</p>
-                            <button class="btn border-left">詳細</button>
-                          </div>
+            <div class="tab-content inner-porduct" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mt-3">
+                    <div class="card inner-porduct__item">
+                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                      <div class="card-body p-0 border-bottom">
+                        <div class="d-flex ">
+                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">不厭亭</p>
+                          <button class="btn border-left">詳細</button>
                         </div>
-                        <botton class="btn btn-light py-2">加入停靠站</botton>
                       </div>
-                    </div>
-                    <div class="col-md-4 mt-3">
-                      <div class="card index-porduct__item">
-                        <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
-                        <div class="card-body p-0 border-bottom">
-                          <div class="d-flex ">
-                            <p class="card-text pt-3 mx-auto index-porduct__item__text">武嶺</p>
-                            <button class="btn border-left">詳細</button>
-                          </div>
-                        </div>
-                        <botton class="btn btn-light py-2">加入停靠站</botton>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mt-3">
-                      <div class="card index-porduct__item ">
-                        <img src="https://picsum.photos/800/600?random=3" class="card-img-top" alt="...">
-                        <div class="card-body p-0 border-bottom">
-                          <div class="d-flex ">
-                            <p class="card-text pt-3 mx-auto index-porduct__item__text">太麻里</p>
-                            <button class="btn  border-left">詳細</button>
-                          </div>
-                        </div>
-                        <botton class="btn btn-light py-2">加入停靠站</botton>
-                      </div>
+                      <botton class="btn btn-light py-2">加入停靠站</botton>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mt-3">
+                    <div class="card inner-porduct__item">
+                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                      <div class="card-body p-0 border-bottom">
+                        <div class="d-flex ">
+                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">武嶺</p>
+                          <button class="btn border-left">詳細</button>
+                        </div>
+                      </div>
+                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mt-3">
+                    <div class="card inner-porduct__item">
+                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                      <div class="card-body p-0 border-bottom">
+                        <div class="d-flex ">
+                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">墾丁</p>
+                          <button class="btn border-left">詳細</button>
+                        </div>
+                      </div>
+                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mt-3">
+                    <div class="card inner-porduct__item">
+                      <img src="https://picsum.photos/800/600?random=2" class="card-img-top" alt="...">
+                      <div class="card-body p-0 border-bottom">
+                        <div class="d-flex ">
+                          <p class="card-text pt-3 mx-auto inner-porduct__item__text">太麻里</p>
+                          <button class="btn border-left">詳細</button>
+                        </div>
+                      </div>
+                      <botton class="btn btn-light py-2">加入停靠站</botton>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -130,14 +153,14 @@
   </main>
 
   <footer>
-    <div class="index-footer__mail">
+    <div class="inner-footer__mail">
       <div class="container">
         <div class=" no-gutters d-flex justify-content-center p-3">
           <h3 class="text-light">生涯騎士，品味人生</h3>
         </div>
       </div>
     </div>
-    <div class="index-footer__info mt-3">
+    <div class="inner-footer__info mt-3">
       <div class="container ">
         <div class="row ">
           <div class="col-6 d-flex flex-column justify-content-between  ">

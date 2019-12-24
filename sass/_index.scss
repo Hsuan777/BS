@@ -1,173 +1,90 @@
-.index-jumbotron{
+.inner-banner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 999;
+  &__index{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
     margin-bottom: 220px;
     color: white;
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    z-index: 999;
     @include sm{
       margin-bottom: 250px;
     }
-  &__list{
-    transform: translateY(85%);
-    @include sm{
-      transform: translateY(125%);
-    }
-  }
-  &__item{
-    //writing-mode也會改變方向軸
-    writing-mode:vertical-lr;
-    color: goldenrod;
-    font-size: 32px;
-    max-width: 150px;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    transition: 0.3s;
-    z-index: -1;
-    &:nth-child(1){
-      background-image: url("https://picsum.photos/800/600?random=1");
-    }
-    &:nth-child(2){
-      background-image: url("https://picsum.photos/800/600?random=2");
-    }
-    &:nth-child(3){
-      background-image: url("https://picsum.photos/800/600?random=3");
-    }
-    &__link{
-      color: white;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-image: url("https://picsum.photos/800/600?random=1");
-      z-index: 99;
-    }
-    &:hover{
-      // color: white;
-      text-decoration: none;
-      &::after{
-        background-color: rgba(0,0,0,0);
+    &__list{
+      transform: translateY(85%);
+      @include sm{
+        transform: translateY(125%);
       }
-      .index-jumbotron__item__link{
-        color:$primary--hover-color ;
+    }
+    &__item{
+      //writing-mode也會改變方向軸
+      writing-mode:vertical-lr;
+      color: goldenrod;
+      font-size: 32px;
+      max-width: 150px;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      transition: 0.3s;
+      z-index: -1;
+      &:nth-child(1){
+        background-image: url("https://picsum.photos/800/600?random=1");
+      }
+      &:nth-child(2){
+        background-image: url("https://picsum.photos/800/600?random=2");
+      }
+      &:nth-child(3){
+        background-image: url("https://picsum.photos/800/600?random=3");
+      }
+      &__link{
+        color: white;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url("https://picsum.photos/800/600?random=1");
         z-index: 99;
+      }
+      &:hover{
+        // color: white;
         text-decoration: none;
+        &::after{
+          background-color: rgba(0,0,0,0);
+        }
+        .inner-banner__index__item__link{
+          color:$primary--hover-color ;
+          z-index: 99;
+          text-decoration: none;
+        }
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        top: -1px;
+        right: 35%;
+        bottom: -1px;
+        border-left:50px solid  transparent;
+        border-right:50px solid  transparent;
+        border-bottom:50px solid  $primary-bg-color;
+        z-index: 99;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(63, 93, 69,0.5);
       }
     }
-    &::before{
-      position: absolute;
-      content: "";
-      top: -1px;
-      right: 35%;
-      bottom: -1px;
-      border-left:50px solid  transparent;
-      border-right:50px solid  transparent;
-      border-bottom:50px solid  $primary-bg-color;
-      z-index: 99;
-    }
-    &::after{
-      position: absolute;
-      content: "";
-      top: 0;
-      left:0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba(63, 93, 69,0.5);
+  }
+  &__product{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    .section__title--after::after{
+      background-color:white ;
     }
   }
 }
-.index-about{
-  background-color: $secondary-bg-color;
-  position: relative;
-  z-index: -99;
-  &::before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 5%;
-    top: 0;
-    left: 0;
-    background-color:$primary-bg-color ;
-    z-index: -1;
-  }
-  &::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 10%;
-    bottom: 0;
-    left: 0;
-    background-color:$primary-bg-color ;
-    z-index: -1;
-  }
-  &__text{
-    color: $secondary-color;
-    writing-mode:vertical-rl;
-    max-height: 350px;
-    font-size: 20px;
-    line-height: 1.5;
-    @include sm{
-      writing-mode:horizontal-tb;
-    }
-  }
-  .section__title{
-    transform: translateY(-50px);
-  }
-}
-.index-about__mobile{
-  .section__title{
-    line-height: 1.3;
-    letter-spacing: 12px;
-    // &:nth-child(2){
-    //   letter-spacing: 14px;
-    // }
-  }
-  .index-about__text{
-    background-color: $secondary-bg-color;
-  }
-}
-.index-porduct{
-  &__item{
-    position: relative;
-    &::before{
-      position: absolute;
-      content: "推薦景點";
-      top: 0;
-      left: 20px;
-      width: 30px;
-      padding: 7px;
-      color: white;
-      background-color: rgba(63, 93, 69,0.8);
-      border-radius: 0 0 3px 3px;
-    }
-    &__text{
-      font-size: 28px;
-      
-    }
-  }
-  .item-coffee{
-    color: rgba(32, 22, 3,0.8)	;
-    &::before{
-      content: "本周咖啡";
-      background-color: rgba(32, 22, 3,0.8)	;
-    }
-  }
-}
-
-.index-footer{
-  &__mail{
-    background-color: $primary-color;
-  }
-  &__info{
-    background-color: $secondary-bg-color;
-    &__title{
-      writing-mode:vertical-rl;
-
-    }
-  }
-}
-
 .section{
   &__title{
     color: $primary-color;
@@ -182,7 +99,7 @@
       writing-mode: horizontal-tb;
       line-height: 1;
     }
-    &__after{
+    &--after{
       position: relative;
       &::after{
         position: absolute;
@@ -202,11 +119,87 @@
       }
     }
   }
-  &__product-title{
-    &__after{
-      &::after{
-        background-color:white ;
+  &__index-description{
+    background-color: $secondary-bg-color;
+    position: relative;
+    z-index: -99;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5%;
+      top: 0;
+      left: 0;
+      background-color:$primary-bg-color ;
+      z-index: -1;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 10%;
+      bottom: 0;
+      left: 0;
+      background-color:$primary-bg-color ;
+      z-index: -1;
+    }
+    &__text{
+      color: $secondary-color;
+      writing-mode:vertical-rl;
+      max-height: 350px;
+      font-size: 20px;
+      line-height: 1.5;
+      @include sm{
+        writing-mode:horizontal-tb;
       }
     }
+    .section__title{
+      transform: translateY(-50px);
+    }
+    &__mobile{
+      .section__title{
+        line-height: 1.3;
+        letter-spacing: 12px;
+        // &:nth-child(2){
+        //   letter-spacing: 14px;
+        // }
+      }
+    }
+  }
+}
+
+.inner-porduct{
+  &__item{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "推薦景點";
+      top: 0;
+      left: 20px;
+      width: 30px;
+      padding: 7px;
+      color: white;
+      background-color: rgba(63, 93, 69,0.8);
+      border-radius: 0 0 3px 3px;
+    }
+    &__text{
+      font-size: 28px;  
+    }
+  }
+  .item-coffee{
+    color: rgba(32, 22, 3,0.8)	;
+    &::before{
+      content: "本周咖啡";
+      background-color: rgba(32, 22, 3,0.8)	;
+    }
+  }
+}
+
+.inner-footer{
+  &__mail{
+    background-color: $primary-color;
+  }
+  &__info{
+    background-color: $secondary-bg-color;
   }
 }
