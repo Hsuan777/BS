@@ -195,6 +195,45 @@
   }
 }
 
+.inner-login{
+  &__item{
+    &--bg{
+      background-color: $primary-color;
+    }
+    &:nth-child(2){
+    background-color: $secondary-bg-color;
+    // background-color: red;
+    }
+    &__title{
+      color: #8DA291;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 2px;
+        background-color: #8DA291;
+        top: 55%;
+        left: 30px;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 2px;
+        background-color: #8DA291;
+        top: 55%;
+        right: 30px;
+      }
+    }
+    &__link{
+      color: #8DA291;;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
 .inner-footer{
   &__mail{
     background-color: $primary-color;
