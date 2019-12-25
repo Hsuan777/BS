@@ -197,6 +197,15 @@
 
 .inner-login{
   &__item{
+    max-width:345px ;
+    transition: 0.3s;
+    &:hover{
+      transform: translateY(-20px);
+      .inner-login__item__title::before,
+      .inner-login__item__title::after{
+        opacity: 1;
+      }
+    }
     &--bg{
       background-color: $primary-color;
     }
@@ -208,22 +217,24 @@
       color: #8DA291;
       position: relative;
       &::before{
+        opacity: 0;
         position: absolute;
         content: "";
-        width: 50px;
+        width: 35px;
         height: 2px;
         background-color: #8DA291;
         top: 55%;
-        left: 30px;
+        left: -12px;
       }
       &::after{
+        opacity: 0;
         position: absolute;
         content: "";
-        width: 50px;
+        width: 35px;
         height: 2px;
         background-color: #8DA291;
         top: 55%;
-        right: 30px;
+        right: -12px;
       }
     }
     &__link{
