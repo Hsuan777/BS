@@ -200,7 +200,7 @@
     max-width:345px ;
     transition: 0.3s;
     &:hover{
-      transform: translateY(-20px);
+      // transform: translateY(-20px);
       .inner-login__item__title::before,
       .inner-login__item__title::after{
         opacity: 1;
@@ -209,7 +209,7 @@
     &--bg{
       background-color: $primary-color;
     }
-    &:nth-child(2){
+    &:nth-child(3){
     background-color: $secondary-bg-color;
     // background-color: red;
     }

@@ -258,11 +258,6 @@ body {
   transition: 0.3s;
 }
 
-.inner-login__item:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-}
-
 .inner-login__item:hover .inner-login__item__title::before,
 .inner-login__item:hover .inner-login__item__title::after {
   opacity: 1;
@@ -272,7 +267,7 @@ body {
   background-color: #3F5D45;
 }
 
-.inner-login__item:nth-child(2) {
+.inner-login__item:nth-child(3) {
   background-color: #EAF0ED;
 }
 
