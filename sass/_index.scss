@@ -211,7 +211,6 @@
     }
     &:nth-child(3){
     background-color: $secondary-bg-color;
-    // background-color: red;
     }
     &__title{
       color: #8DA291;
@@ -241,6 +240,12 @@
       color: #8DA291;;
       &:hover{
         text-decoration: none;
+      }
+    }
+    input[id="user"]:focus{
+      border: 5px solid #8DA291;
+      &::-webkit-input-placeholder{
+        color: transparent;
       }
     }
   }

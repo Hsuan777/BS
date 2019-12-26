@@ -67,17 +67,17 @@
                 <div class="card-body ">
                   <h2 class="text-center mt-4 mb-5 inner-login__item__title text-light">會員登入</h2>
                   <div class="form-group ">
-                    <div class="input-group-prepend ">
-                      <div class="input-group-text rounded-0 border-0 bg-light  "><i class="fas fa-user-alt "></i></div>
-                      <input type="text" class="form-control rounded-0 border-0 bg-light" id="formGroupExampleInput2"
-                        placeholder="電子信箱 / 手機號碼" >
+                    <div class="input-group-prepend inner-login__item__input">
+                      <label for="user" class="input-group-text rounded-0 border-0 bg-light  "><i class="fas fa-user-alt "></i></label >
+                      <input type="text" class="form-control rounded-0 border-0 bg-light" id="user" placeholder=""
+                        data-toggle="tooltip" data-placement="top" data-html="true" title="<em>電子信箱/手機號碼</em>">
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text rounded-0 border-0 bg-light"><i class="fas fa-key"></i></div>
-                      <input type="text" class="form-control rounded-0 border-0 bg-light " id="formGroupExampleInput2"
-                        placeholder="請輸入使用者密碼">
+                      <label for="password" class="input-group-text rounded-0 border-0 bg-light"><i class="fas fa-key"></i></label>
+                      <input type="text" class="form-control rounded-0 border-0 bg-light " id="password"
+                      data-toggle="tooltip" data-placement="top" data-html="true" title="<em>使用者密碼</em>">
                     </div>
                   </div>
                   <div class="form-group form-check">
@@ -166,7 +166,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-
+  <script>
+    $(document).ready(function () {
+      //提示工具
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
 </body>
 

@@ -306,6 +306,14 @@ body {
   text-decoration: none;
 }
 
+.inner-login__item input[id="user"]:focus {
+  border: 5px solid #8DA291;
+}
+
+.inner-login__item input[id="user"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 .inner-footer__mail {
   background-color: #3F5D45;
 }
