@@ -195,6 +195,19 @@
   }
 } 
 
+.inner-cart{
+  &__item{
+    &__img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+  &__order{
+    color: white;
+    background-color:$primary-color ;
+  }
+}
+
 .inner-login{
   &__item{
     max-width:345px ;
