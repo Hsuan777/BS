@@ -197,9 +197,18 @@
 
 .inner-cart{
   &__item{
+    align-items:center;
+
+    @include sm{
+      align-items:start;
+    }
     &__img{
       width: 200px;
       height: 200px;
+      @include sm{
+        width: 130px;
+        height: 130px;
+      }
     }
   }
   &__order{
