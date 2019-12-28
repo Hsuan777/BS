@@ -53,98 +53,64 @@
   <main>
 
     <section>
-      <div class="container mt-5 ">
+      <div class="container mt-5">
         <div class="row">
-          <div class="col-md-8">
-            <h2 class="text-center mb-5 py-3 secondary-block--bg">您的購物車</h2>
-
-            <ul class="list-unstyled">
-              <li class="media border-bottom pb-3 inner-cart__item ">
-                <img src="https://picsum.photos/400/300?random=2"
-                  class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                <div class="media-body row align-items-center">
-                  <div class="col-lg-4">
-                    <div class="inner-cart__item__title">
-                      <h4 class="mt-0 mb-1">天堂鳥</h4>
-                      <p class="h4">NT$ 300</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 my-2 d-flex align-items-center">
-                    <nav aria-label="..." class="  ">
-                      <ul class="pagination  ">
-                        <li class="page-item"><a class="page-link">-</a></li>
-                        <li class="page-item"><a class="page-link disabled">2</a></li>
-                        <li class="page-item"><a class="page-link">+</a></li>
-                      </ul>
-                    </nav>
-                    <button class="btn  btn-sm">
-                      <i class="far fa-trash-alt fa"></i>
-                    </button>
-                  </div>
-                  <div class="col-lg-4 ">
-                    <h4 class="font-weight-bold">NT$ 900</h4>
-                  </div>
+          <div class="col-md-7 ">
+            
+            <form class="primary-block--bg text-light">
+              <div class="p-3 d-flex justify-content-between">
+                <h2 class="">運送</h2>
+                <ol class="inner-checkout__list list-unstyled d-flex justify-content-center mt-3">
+                  <li class="mr-5 d-flex flex-column justify-content-center align-items-center active"></li>
+                  <li class="mr-5 d-flex flex-column justify-content-center align-items-center "></li>
+                  <li class="mr-5 d-flex flex-column justify-content-center align-items-center"></li>
+                </ol>
+              </div>
+              <div class="form-row px-3">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">姓氏</label>
+                  <input type="text"" class="form-control" id="inputEmail4" placeholder="姓氏">
                 </div>
-              </li>
-              <li class="media my-4 border-bottom pb-3  inner-cart__item ">
-                <img src="https://picsum.photos/400/300?random=3"
-                  class="mr-3 mr-sm-5 img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                <div class="media-body row align-items-center">
-                  <div class="col-lg-4">
-                    <div class="inner-cart__item__title">
-                      <h4 class="mt-0 mb-1">天堂鳥</h4>
-                      <p class="h4">NT$ 300</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 my-2 d-flex align-items-center">
-                    <nav aria-label="..." class="  ">
-                      <ul class="pagination  ">
-                        <li class="page-item"><a class="page-link">-</a></li>
-                        <li class="page-item"><a class="page-link disabled">2</a></li>
-                        <li class="page-item"><a class="page-link">+</a></li>
-                      </ul>
-                    </nav>
-                    <button class="btn  btn-sm ">
-                      <i class="far fa-trash-alt fa"></i>
-                    </button>
-                  </div>
-                  <div class="col-lg-4 ">
-                    <h4 class="font-weight-bold">NT$ 900</h4>
-                  </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">名子</label>
+                  <input type="text"" class="form-control" id="inputPassword4" placeholder="名子">
                 </div>
-              </li>
-              <li class="media border-bottom pb-3  inner-cart__item ">
-                <img src="https://picsum.photos/400/300?random=4"
-                  class="mr-3 mr-sm-5 img-fluid  img-thumbnail inner-cart__item__img" alt="...">
-                <div class="media-body row align-items-center">
-                  <div class="col-lg-4">
-                    <div class="inner-cart__item__title">
-                      <h4 class="mt-0 mb-1">天堂鳥</h4>
-                      <p class="h4">NT$ 300</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 my-2 d-flex align-items-center">
-                    <nav aria-label="..." class="  ">
-                      <ul class="pagination  ">
-                        <li class="page-item"><a class="page-link">-</a></li>
-                        <li class="page-item"><a class="page-link disabled">2</a></li>
-                        <li class="page-item"><a class="page-link">+</a></li>
-                      </ul>
-                    </nav>
-                    <button class="btn  btn-sm ">
-                      <i class="far fa-trash-alt fa"></i>
-                    </button>
-                  </div>
-                  <div class="col-lg-4 ">
-                    <h4 class="font-weight-bold">NT$ 900</h4>
-                  </div>
+                <div class="form-group col">
+                  <label for="inputPassword4">電話</label>
+                  <input type="phone""" class="form-control" id="inputPassword4" placeholder="名子">
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="form-row px-3">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">縣市</label>
+                  <select class="custom-select " id="inlineFormCustomSelectPref">
+                    <option selected>縣市</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">鄉、鎮、區</label>
+                  <select class="custom-select " id="inlineFormCustomSelectPref">
+                    <option selected>鄉、鎮、區</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group col">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="道路地址">
+                </div>
+              </div>
+              <button type="submit" class="btn border-0 rounded-0 w-100 py-3 bg-warning font-weight-bold"><span
+                class="h3">下一步</span>
+            </button>
+            </form>
           </div>
-          <div class="col-md-4">
-            <div class="primary-block--bg text-light">
-              <h2 class="text-center  py-3 mx-4 border-bottom">訂單摘要</h2>
+          <div class="col-md-5">
+            <div class="inner-cart__order">
+              <h2 class="text-center mb-5 py-3 mx-4 secondary-block--bg">訂單摘要</h2>
               <form action="">
                 <table class="table table-borderless">
                   <tbody>
@@ -162,11 +128,48 @@
                     </tr>
                   </tbody>
                 </table>
-                <button type="submit" class="btn border-0 rounded-0 w-100 py-3 bg-warning font-weight-bold"><span
-                    class="h3">結帳</span>
-                </button>
               </form>
             </div>
+            <h2 class="text-center mb-5 py-3 secondary-block--bg">購物清單</h2>
+            <ul class="list-unstyled">
+              <li class="media border-bottom pb-3 inner-cart__item ">
+                <img src="https://picsum.photos/400/300?random=2"
+                  class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
+                <div class="media-body row align-items-center">
+                  <div class="col">
+                    <div class="inner-cart__item__title">
+                      <h4 class="">天堂鳥 (2)</h4>
+                      <p class="h4">NT$ 900</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="media border-bottom pb-3 inner-cart__item ">
+                <img src="https://picsum.photos/400/300?random=3"
+                  class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
+                <div class="media-body row align-items-center">
+                  <div class="col">
+                    <div class="inner-cart__item__title">
+                      <h4 class="">天堂鳥 (2)</h4>
+                      <p class="h4">NT$ 900</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="media border-bottom pb-3 inner-cart__item ">
+                <img src="https://picsum.photos/400/300?random=4"
+                  class="mr-3 mr-sm-5  img-fluid  img-thumbnail inner-cart__item__img" alt="...">
+                <div class="media-body row align-items-center">
+                  <div class="col">
+                    <div class="inner-cart__item__title">
+                      <h4 class="">天堂鳥 (2)</h4>
+                      <p class="h4">NT$ 900</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
 
           </div>
         </div>

@@ -211,10 +211,6 @@
       }
     }
   }
-  &__order{
-    color: white;
-    background-color:$primary-color ;
-  }
 }
 
 .inner-login{
@@ -272,6 +268,45 @@
     }
   }
 }
+
+.inner-checkout{
+  &__list{
+    li{
+      position: relative;
+      width: 15px;
+      height: 15px;
+      font-size: 9px;
+      color:white ;
+      border-radius: 50%;
+      border: 1px solid $primary-color ;
+      background-color: white ;
+      box-shadow: 0px 0px  0px 1px white;
+      + li{
+        &::before{
+          position: absolute;
+          content:"";
+          top: 50%;
+          left: -60px;
+          width:58px ;
+          height: 1px;
+          border:1px solid $secondary-color;
+          background-color: $secondary-color;
+          
+        }
+      }
+      &.active{
+        ~ li{
+          box-shadow: 0px 0px  0px 1px  $secondary-color;
+          background-color: transparent ;
+          &::before{
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
 .inner-footer{
   &__mail{
     background-color: $primary-color;

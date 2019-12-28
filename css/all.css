@@ -6,8 +6,16 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.section__title--bg {
-  background-color: #EAF0ED;
+.primary-block--bg {
+  background-color: #3F5D45;
+}
+
+.secondary-block--bg {
+  background-color: secondary-color;
+}
+
+.btn-submit--color {
+  background-color: #FFE180;
 }
 
 .inner-banner {
@@ -282,11 +290,6 @@ body {
   }
 }
 
-.inner-cart__order {
-  color: white;
-  background-color: #3F5D45;
-}
-
 .inner-login__item {
   max-width: 345px;
   -webkit-transition: 0.3s;
@@ -347,6 +350,40 @@ body {
 
 .inner-login__item input[id="user"]:focus::-webkit-input-placeholder {
   color: transparent;
+}
+
+.inner-checkout__list li {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  font-size: 9px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #3F5D45;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px  0px 1px white;
+          box-shadow: 0px 0px  0px 1px white;
+}
+
+.inner-checkout__list li + li::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -60px;
+  width: 58px;
+  height: 1px;
+  border: 1px solid #8DA291;
+  background-color: #8DA291;
+}
+
+.inner-checkout__list li.active ~ li {
+  -webkit-box-shadow: 0px 0px 0px 1px #8DA291;
+          box-shadow: 0px 0px 0px 1px #8DA291;
+  background-color: transparent;
+}
+
+.inner-checkout__list li.active ~ li::before {
+  background-color: #8DA291;
 }
 
 .inner-footer__mail {

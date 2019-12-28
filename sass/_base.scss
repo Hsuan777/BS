@@ -5,8 +5,14 @@ body{
   background-color:$primary-bg-color;
   font-family: $font-family;
 }
-.section__title--bg{
-  background-color:$secondary-bg-color;
+.primary-block--bg{
+  background-color:$primary-color;
+}
+.secondary-block--bg{
+  background-color:secondary-color;
+}
+.btn-submit--color{
+  background-color: #FFE180;
 }
 
 
