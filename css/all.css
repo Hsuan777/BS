@@ -129,6 +129,10 @@ body {
   background-color: white;
 }
 
+.inner-banner__success {
+  background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+}
+
 .section__title {
   color: #3F5D45;
   font-size: 42px;
