@@ -198,7 +198,9 @@
 .inner-cart{
   &__item{
     align-items:center;
-
+    + li.inner-cart__item {
+      border-top: 1px solid #dee2e6;
+    }
     @include sm{
       align-items:start;
     }

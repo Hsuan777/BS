@@ -11,7 +11,7 @@ body {
 }
 
 .secondary-block--bg {
-  background-color: secondary-color;
+  background-color: #EAF0ED;
 }
 
 .btn-submit--color {
@@ -268,6 +268,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.inner-cart__item + li.inner-cart__item {
+  border-top: 1px solid #dee2e6;
 }
 
 @media (max-width: 576px) {
