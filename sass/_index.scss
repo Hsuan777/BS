@@ -309,9 +309,17 @@
           }
         }
       }
+      &.check{
+      border: none;
+      color: $primary-color ;
+        .fa-check{
+          transform: translate(2px,-1px);
+        }
+      }
     }
   }
-}
+ }
+
 
 .inner-footer{
   &__mail{
