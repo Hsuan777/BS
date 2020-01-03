@@ -1,20 +1,30 @@
 @import "var";
 body{
   font-size: $font-size;
+  font-family: $font-family;
   color: $primary-color;
   background-color:$primary-bg-color;
-  font-family: $font-family;
 }
-.primary-block--bg{
+.primary-block{
   background-color:$primary-color;
+  color: white;
 }
-.secondary-block--bg{
+.secondary-block{
   background-color:$secondary-bg-color;
+  color: $secondary-color;
+  &__title{
+    color: $secondary-color;
+  }
+  &__link{
+    color: $secondary-color;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
-.btn-submit--color{
-  background-color: #FFE180;
+.active--bg{
+  background-color: $active-color;
 }
-
 
 
 
