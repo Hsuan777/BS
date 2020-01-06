@@ -91,7 +91,7 @@
   }
 }
 
-.inner-about{
+.inner-about, footer{
   .secondary-block{
     @include md{
       writing-mode:horizontal-tb;
@@ -120,6 +120,9 @@
       z-index: -1;
     }
     &__title{
+      // 主標題區塊
+      // 副標題，這裡的是副標題
+      // 問題是，首頁的副標題要如何區隔
       font-size: 42px;
       writing-mode:vertical-lr;
       position: relative;

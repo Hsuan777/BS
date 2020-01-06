@@ -195,13 +195,13 @@ body {
   background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
 }
 
-.inner-about .secondary-block {
+.inner-about .secondary-block, footer .secondary-block {
   position: relative;
   z-index: -99;
 }
 
 @media (max-width: 768px) {
-  .inner-about .secondary-block {
+  .inner-about .secondary-block, footer .secondary-block {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
@@ -209,7 +209,7 @@ body {
   }
 }
 
-.inner-about .secondary-block::before {
+.inner-about .secondary-block::before, footer .secondary-block::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -220,7 +220,7 @@ body {
   z-index: -1;
 }
 
-.inner-about .secondary-block::after {
+.inner-about .secondary-block::after, footer .secondary-block::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -231,7 +231,7 @@ body {
   z-index: -1;
 }
 
-.inner-about .secondary-block__title {
+.inner-about .secondary-block__title, footer .secondary-block__title {
   font-size: 42px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -243,25 +243,25 @@ body {
 }
 
 @media (max-width: 768px) {
-  .inner-about .secondary-block__title {
+  .inner-about .secondary-block__title, footer .secondary-block__title {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
   }
 }
 
-.inner-about .secondary-block__title span {
+.inner-about .secondary-block__title span, footer .secondary-block__title span {
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb;
   line-height: 1;
 }
 
-.inner-about .secondary-block__title--after {
+.inner-about .secondary-block__title--after, footer .secondary-block__title--after {
   position: relative;
 }
 
-.inner-about .secondary-block__title--after::after {
+.inner-about .secondary-block__title--after::after, footer .secondary-block__title--after::after {
   position: absolute;
   content: "";
   width: 2px;
@@ -274,7 +274,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .inner-about .secondary-block__title--after::after {
+  .inner-about .secondary-block__title--after::after, footer .secondary-block__title--after::after {
     width: 70px;
     height: 2px;
     top: 50%;
@@ -282,7 +282,7 @@ body {
   }
 }
 
-.inner-about .secondary-block__text {
+.inner-about .secondary-block__text, footer .secondary-block__text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -293,7 +293,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .inner-about .secondary-block__text {
+  .inner-about .secondary-block__text, footer .secondary-block__text {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
