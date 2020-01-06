@@ -10,7 +10,12 @@
 
 
 //@media
-@mixin iPad{
+@mixin sm{
+	@media (max-width: 576px) {
+		@content
+	}
+}
+@mixin md{
 	@media (max-width: 768px) {
 		@content
 	}
@@ -24,10 +29,5 @@
 @mixin iPhone5{
 	@media (max-width: 320px) {
 		@content		
-	}
-}
-@mixin sm{
-	@media (max-width: 576px) {
-		@content
 	}
 }

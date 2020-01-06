@@ -14,7 +14,7 @@ body{
   background-color:$secondary-bg-color;
   color: $secondary-color;
   &__title{
-    color: $secondary-color;
+    color: $primary-color;
   }
   &__link{
     color: $secondary-color;
@@ -25,6 +25,9 @@ body{
   &__body{
     background-color: $primary-bg-color;
   }
+  // &__text{
+
+  // }
 }
 .active--bg{
   background-color: $active-color;
