@@ -5,17 +5,12 @@
   background-size: cover;
   position: relative;
   z-index: 999;
-  &__index{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    margin-bottom: 220px;
-    color: white;
-    @include sm{
-      margin-bottom: 250px;
-    }
+  .primary-block{
+    background-color: rgba(0,0,0,0.2);
     &__list{
       transform: translateY(85%);
       @include sm{
-        transform: translateY(125%);
+        transform: translateY(120%);
       }
     }
     &__item{
@@ -23,49 +18,32 @@
       writing-mode:vertical-lr;
       color: goldenrod;
       font-size: 32px;
-      max-width: 150px;
+      max-width: auto;
       background-size: cover;
       background-position: center center;
       position: relative;
       transition: 0.3s;
       z-index: -1;
+      @include sm{
+        max-width: 150px;
+      }
       &:nth-child(1){
-        background-image: url("https://picsum.photos/800/600?random=1");
+        // background-image: url("https://picsum.photos/800/600?random=1");
+        background-image: url("https://bit.ly/2zBDAxX");
       }
       &:nth-child(2){
-        background-image: url("https://picsum.photos/800/600?random=2");
+        // background-image: url("https://picsum.photos/800/600?random=2");
+        background-image: url("https://bit.ly/2R5tqwD");
       }
       &:nth-child(3){
-        background-image: url("https://picsum.photos/800/600?random=3");
+        // background-image: url("https://picsum.photos/800/600?random=3");
+        background-image: url("https://bit.ly/2Qodh3Z");
       }
       &__link{
         color: white;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: url("https://picsum.photos/800/600?random=1");
-        z-index: 99;
-      }
-      &:hover{
-        // color: white;
-        text-decoration: none;
-        &::after{
-          background-color: rgba(0,0,0,0);
-        }
-        .inner-banner__index__item__link{
-          color:$active-color ;
-          z-index: 99;
-          text-decoration: none;
-        }
-      }
-      &::before{
-        position: absolute;
-        content: "";
-        top: -1px;
-        right: 35%;
-        bottom: -1px;
-        border-left:50px solid  transparent;
-        border-right:50px solid  transparent;
-        border-bottom:50px solid  $primary-bg-color;
+        // background-image: url("https://picsum.photos/800/600?random=1");
         z-index: 99;
       }
       &::after{
@@ -75,8 +53,42 @@
         left:0;
         bottom: 0;
         right: 0;
-        background-color: rgba(0, 0, 0,0.5);
+        background-color: rgba(0, 0, 0,0.3);
+        transition: 0.3s;
       }
+      &:hover{
+        text-decoration: none;
+        &::after{
+          background-color: rgba(255,255,255,0.5);
+          transform: scale(0.7);
+        }
+        .primary-block__item__link{
+          background-color: rgba(0,0,0,0.5);
+          color: $primary-color;
+          z-index: 99;
+          text-decoration: none;
+          // &::before{
+          //   position: absolute;
+          //   content: "";
+          //   right:0;
+          //   bottom: -1px;
+          //   border-left:30px solid  transparent;
+          //   border-right:30px solid  transparent;
+          //   border-bottom:30px solid  $active-color;
+          //   z-index: 99;
+          // }
+        }
+      }
+      
+    }
+  }
+  &__index{
+    // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("https://bit.ly/2OhbMHr");
+    margin-bottom: 220px;
+    color: white;
+    @include sm{
+      margin-bottom: 300px;
     }
   }
   &__product{
@@ -157,6 +169,7 @@
     }
     &__text{
       writing-mode:vertical-rl;
+      line-height: 2.5;
       max-height: 400px;
       font-size: 18px;
       transform: translateY(20px);
