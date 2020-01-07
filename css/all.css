@@ -110,7 +110,6 @@ body {
           writing-mode: vertical-lr;
   color: goldenrod;
   font-size: 32px;
-  max-width: auto;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -119,9 +118,17 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .inner-banner .primary-block__item {
     max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-banner .primary-block__item {
+    font-size: 16px;
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 
@@ -234,7 +241,7 @@ body {
 }
 
 .inner-about .secondary-block__title, footer .secondary-block__title {
-  font-size: 42px;
+  font-size: 35px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
