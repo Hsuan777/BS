@@ -4,13 +4,14 @@
   background-position: center center;
   background-size: cover;
   position: relative;
-  z-index: 999;
+  
   .primary-block{
     background-color: rgba(0,0,0,0.2);
     &__list{
       transform: translateY(85%);
       @include sm{
-        transform: translateY(120%);
+        transform: translateY(105%);
+       
       }
     }
     &__item{
@@ -18,21 +19,22 @@
       writing-mode:vertical-lr;
       color: goldenrod;
       font-size: 32px;
-      // min-width: 220px;
+      // min-width: 250px;
       background-size: cover;
       background-position: center center;
       position: relative;
       transition: 0.3s;
       z-index: -1;
-      
-      @include md{
-        max-width: 150px;
-      }
-      @include sm{
+      @include xs{
         font-size: 16px;
-        max-width: 100px;
-        max-height: 100px;
       }
+      @include md{
+        font-size: 24px;
+      }
+      // @include lg{
+      //   max-width: 250px;
+      // }
+      
       &:nth-child(1){
         // background-image: url("https://picsum.photos/800/600?random=1");
         background-image: url("https://bit.ly/2zBDAxX");
@@ -70,9 +72,9 @@
         }
         .primary-block__item__link{
           background-color: rgba(0,0,0,0.5);
-          color: $primary-color;
+          color: #EEE;
           z-index: 99;
-          text-decoration: none;
+          
           // &::before{
           //   position: absolute;
           //   content: "";
@@ -144,11 +146,12 @@
       font-size: 35px;
       writing-mode:vertical-lr;
       position: relative;
-      line-height: 0;
+      line-height: 0.1;
       transform: translateY(-10px);
       @include md{
         writing-mode:horizontal-tb;
       }
+      
       span{
         writing-mode: horizontal-tb;
         line-height: 1;
@@ -184,6 +187,15 @@
         font-size: 20px;
         background-color:$secondary-bg-color;
       }
+    }
+    &__img{
+      background-image: url("https://bit.ly/2xPn7Eq");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+      width: 370px;
+      min-height: 550px;
     }
     
   }

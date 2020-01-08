@@ -25,6 +25,11 @@
 		@content
 	}
 }
+@mixin lg{
+	@media (max-width: 1024px) {
+		@content
+	}
+}
 @mixin iPhone_Plus{
 	@media (max-width: 414px) {
 		@content
