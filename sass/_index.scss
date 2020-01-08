@@ -4,14 +4,14 @@
   background-position: center center;
   background-size: cover;
   position: relative;
-  
   .primary-block{
     background-color: rgba(0,0,0,0.2);
+    border-radius: 50px;
+    transform: translateY(50px);
     &__list{
       transform: translateY(85%);
       @include sm{
         transform: translateY(105%);
-       
       }
     }
     &__item{
@@ -29,11 +29,8 @@
         font-size: 16px;
       }
       @include md{
-        font-size: 24px;
+        font-size: 20px;
       }
-      // @include lg{
-      //   max-width: 250px;
-      // }
       
       &:nth-child(1){
         // background-image: url("https://picsum.photos/800/600?random=1");
@@ -67,12 +64,11 @@
       &:hover{
         text-decoration: none;
         &::after{
-          background-color: rgba(255,255,255,0.5);
-          transform: scale(0.7);
+          background-color: rgba(0,0,0,0.5);
+          transform: scale(0.8);
         }
         .primary-block__item__link{
-          background-color: rgba(0,0,0,0.5);
-          color: #EEE;
+          color: $active-color;
           z-index: 99;
           
           // &::before{

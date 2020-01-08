@@ -89,6 +89,9 @@ body {
 
 .inner-banner .primary-block {
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 .inner-banner .primary-block__list {
@@ -125,7 +128,7 @@ body {
 
 @media (max-width: 768px) {
   .inner-banner .primary-block__item {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -165,14 +168,13 @@ body {
 }
 
 .inner-banner .primary-block__item:hover::after {
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .inner-banner .primary-block__item:hover .primary-block__item__link {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #EEE;
+  color: #FFE180;
   z-index: 99;
 }
 
