@@ -11,7 +11,7 @@
 
 //@media
 @mixin xs{
-	@media (max-width: 438px) {
+	@media (max-width: 437px) {
 		@content
 	}
 }
@@ -21,7 +21,7 @@
 	}
 }
 @mixin md{
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		@content
 	}
 }

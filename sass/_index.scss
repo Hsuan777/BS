@@ -89,10 +89,10 @@
   &__index{
     // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
     background-image: url("https://bit.ly/2OhbMHr");
-    margin-bottom: 220px;
+    margin-bottom: 250px;
     color: white;
-    @include sm{
-      margin-bottom: 300px;
+    @include md{
+      margin-bottom: 120px;
     }
   }
   &__product{
@@ -111,7 +111,8 @@
   .secondary-block{
     @include md{
       writing-mode:horizontal-tb;
-      background-color: #EEE;
+      background-color: transparent;
+      padding: 50px 0;
     }
     position: relative;
     z-index: -99;
@@ -142,10 +143,14 @@
       font-size: 35px;
       writing-mode:vertical-lr;
       position: relative;
-      line-height: 0.1;
-      transform: translateY(-10px);
+      line-height: 0;
+      transform: translateY(-20px);
       @include md{
+        font-size: 20px;
         writing-mode:horizontal-tb;
+      }
+      @include xs{
+        font-size: 16px;
       }
       
       span{
@@ -180,32 +185,37 @@
       transform: translateY(20px);
       @include md{
         writing-mode:horizontal-tb;
-        font-size: 20px;
-        background-color:$secondary-bg-color;
+        font-size: 18px;
+        background-color:rgba(255,255,255,0.6);
       }
+      
+      
     }
     &__img{
-      background-image: url("https://bit.ly/2xPn7Eq");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
       position: absolute;
       width: 370px;
-      min-height: 550px;
+      height: 370px;
+      transform: translateY(-20px);
+      
+      
+    }
+    &__imgItem-1{
+      background-image: url("https://bit.ly/2xPn7Eq");
+    }
+    &__imgItem-2{
+      background-image: url("https://bit.ly/2zzAQS4");
+      right: 0;
+    }
+    &__imgItem-2-1{
+      background-image: url("https://bit.ly/2zzAQS4");
     }
     
   }
 }
-.section{
-  &__index-description{
-    
-    
-    .section__title{
-      transform: translateY(-10px);
-    }
-    
-  }
-}
+
 // .section{
 //   &__title{
 //     font-size: 42px;
