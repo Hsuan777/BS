@@ -4,32 +4,46 @@
   background-position: center center;
   background-size: cover;
   position: relative;
+  &__index{
+    // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("https://bit.ly/2OhbMHr");
+    margin-bottom: 300px;
+    color: white;
+    @include md{
+      margin-bottom: 250px;
+    }
+  }
+  &__product{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    .section__title--after::after{
+      background-color:white ;
+    }
+  }
+  &__success{
+    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+
+  }
   .primary-block{
     background-color: rgba(0,0,0,0.2);
     border-radius: 50px;
     transform: translateY(50px);
     &__list{
       transform: translateY(85%);
-      @include sm{
+      @include md{
         transform: translateY(105%);
       }
     }
     &__item{
       //writing-mode也會改變方向軸
       writing-mode:vertical-lr;
-      color: goldenrod;
       font-size: 32px;
-      // min-width: 250px;
       background-size: cover;
       background-position: center center;
       position: relative;
       transition: 0.3s;
       z-index: -1;
-      @include xs{
-        font-size: 16px;
-      }
       @include md{
-        font-size: 20px;
+        font-size: 24px;
       }
       
       &:nth-child(1){
@@ -45,7 +59,7 @@
         background-image: url("https://bit.ly/2Qodh3Z");
       }
       &__link{
-        color: white;
+        color: $primary-color;
         -webkit-background-clip: text;
         background-clip: text;
         // background-image: url("https://picsum.photos/800/600?random=1");
@@ -58,17 +72,17 @@
         left:0;
         bottom: 0;
         right: 0;
-        background-color: rgba(0, 0, 0,0.3);
+        background-color: rgba(255, 255, 255,0.6);
         transition: 0.3s;
       }
       &:hover{
         text-decoration: none;
         &::after{
-          background-color: rgba(0,0,0,0.5);
+          background-color: rgba(255, 225, 128,0.5);
           transform: scale(0.8);
         }
         .primary-block__item__link{
-          color: $active-color;
+          // color: $active-color;
           z-index: 99;
           
           // &::before{
@@ -86,36 +100,20 @@
       
     }
   }
-  &__index{
-    // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    background-image: url("https://bit.ly/2OhbMHr");
-    margin-bottom: 250px;
-    color: white;
-    @include md{
-      margin-bottom: 120px;
-    }
-  }
-  &__product{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-    .section__title--after::after{
-      background-color:white ;
-    }
-  }
-  &__success{
-    background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-
-  }
+  
 }
 
 .inner-about, footer{
   .secondary-block{
+    position: relative;
+    margin-bottom: 150px;
     @include md{
       writing-mode:horizontal-tb;
-      background-color: transparent;
-      padding: 50px 0;
+      // transform: translateY(50px);
+      padding-bottom: 60px;
+      margin-bottom: 50px;
     }
-    position: relative;
-    z-index: -99;
+    
     &::before{
       position: absolute;
       content: "";
@@ -147,6 +145,7 @@
       transform: translateY(-20px);
       @include md{
         font-size: 20px;
+        color: rgb(209, 167, 28);
         writing-mode:horizontal-tb;
       }
       @include xs{
@@ -173,6 +172,7 @@
             height: 2px;
             top: 50%;
             right:-35px;
+            background-color:rgb(209, 167, 28) ;
           }
         }
       }
@@ -182,11 +182,14 @@
       line-height: 2.5;
       max-height: 400px;
       font-size: 18px;
+      
       transform: translateY(20px);
       @include md{
         writing-mode:horizontal-tb;
         font-size: 18px;
+        color:$primary-color;
         background-color:rgba(255,255,255,0.5);
+        border-radius: 50px 20px 50px 20px;
       }
       
       
@@ -196,10 +199,15 @@
       background-position: center center;
       background-size: cover;
       position: absolute;
-      width: 370px;
-      height: 370px;
-      transform: translateY(-20px);
-      
+      width: 450px;
+      height: 450px;
+      transform: translateY(-50px);
+      border-radius: 10px ;
+      @include md{
+        width: 370px;
+        height: 370px;
+        transform: translateY(-20px);
+      }
       
     }
     &__imgItem-1{
