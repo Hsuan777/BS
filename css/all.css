@@ -95,7 +95,13 @@ body {
 
 @media (max-width: 767px) {
   .inner-banner__index {
-    margin-bottom: 230px;
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 437px) {
+  .inner-banner__index {
+    margin-bottom: 130px;
   }
 }
 
@@ -146,6 +152,12 @@ body {
 @media (max-width: 767px) {
   .inner-banner .primary-block__item {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 437px) {
+  .inner-banner .primary-block__item {
+    font-size: 16px;
   }
 }
 
@@ -368,6 +380,18 @@ body {
 
 .inner-porduct__item__text {
   font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .inner-porduct__item__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 437px) {
+  .inner-porduct__item__text {
+    font-size: 12px;
+  }
 }
 
 .inner-porduct .item-coffee {
