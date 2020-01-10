@@ -362,11 +362,11 @@ body {
   background-image: url("https://bit.ly/2zzAQS4");
 }
 
-.inner-porduct__item {
+.inner-product__item {
   position: relative;
 }
 
-.inner-porduct__item::before {
+.inner-product__item::before {
   position: absolute;
   content: "本日精選";
   top: 0;
@@ -378,27 +378,27 @@ body {
   border-radius: 0 0 3px 3px;
 }
 
-.inner-porduct__item__text {
+.inner-product__item__text {
   font-size: 28px;
 }
 
 @media (max-width: 767px) {
-  .inner-porduct__item__text {
+  .inner-product__item__text {
     font-size: 16px;
   }
 }
 
 @media (max-width: 437px) {
-  .inner-porduct__item__text {
+  .inner-product__item__text {
     font-size: 12px;
   }
 }
 
-.inner-porduct .item-coffee {
+.inner-product .item-coffee {
   color: rgba(32, 22, 3, 0.8);
 }
 
-.inner-porduct .item-coffee::before {
+.inner-product .item-coffee::before {
   content: "本周咖啡";
   background-color: rgba(32, 22, 3, 0.8);
 }
