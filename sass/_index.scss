@@ -7,10 +7,10 @@
   &__index{
     // background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
     background-image: url("https://bit.ly/2OhbMHr");
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     color: white;
     @include md{
-      margin-bottom: 250px;
+      margin-bottom: 230px;
     }
   }
   &__product{
@@ -106,11 +106,13 @@
 .inner-about, footer{
   .secondary-block{
     position: relative;
+    margin-top: 100px;
     margin-bottom: 150px;
     @include md{
       writing-mode:horizontal-tb;
       // transform: translateY(50px);
       padding-bottom: 60px;
+      margin-top: 50px;
       margin-bottom: 50px;
     }
     
@@ -311,7 +313,7 @@
     position: relative;
     &::before{
       position: absolute;
-      content: "推薦景點";
+      content: "本日精選";
       top: 0;
       left: 20px;
       width: 30px;
@@ -444,10 +446,17 @@
 }
 
 .inner-footer{
+  &__logo{
+    @include hidden_text(172px,27px,url('../img/logotype-lg-dark.svg'));
+    
+  }
   &__mail{
     background-color: $primary-color;
   }
   &__info{
     background-color: $secondary-bg-color;
   }
+}
+.navbar-brand{
+  @include hidden_text(220px,40px,url('../img/logo-all-dark.svg'));
 }

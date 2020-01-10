@@ -89,13 +89,13 @@ body {
 
 .inner-banner__index {
   background-image: url("https://bit.ly/2OhbMHr");
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   color: white;
 }
 
 @media (max-width: 767px) {
   .inner-banner__index {
-    margin-bottom: 250px;
+    margin-bottom: 230px;
   }
 }
 
@@ -196,6 +196,7 @@ body {
 
 .inner-about .secondary-block, footer .secondary-block {
   position: relative;
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -205,6 +206,7 @@ body {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     padding-bottom: 60px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
@@ -354,7 +356,7 @@ body {
 
 .inner-porduct__item::before {
   position: absolute;
-  content: "推薦景點";
+  content: "本日精選";
   top: 0;
   left: 20px;
   width: 30px;
@@ -483,11 +485,31 @@ body {
   right: -12px;
 }
 
+.inner-footer__logo {
+  width: 172px;
+  height: 27px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("../img/logotype-lg-dark.svg");
+  background-repeat: no-repeat;
+}
+
 .inner-footer__mail {
   background-color: #3F5D45;
 }
 
 .inner-footer__info {
   background-color: #EAF0ED;
+}
+
+.navbar-brand {
+  width: 220px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("../img/logo-all-dark.svg");
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=all.css.map */
