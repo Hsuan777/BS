@@ -39,18 +39,12 @@
     &__item{
       //writing-mode也會改變方向軸
       writing-mode:vertical-lr;
-      font-size: 32px;
       background-size: cover;
       background-position: center center;
       position: relative;
       transition: 0.3s;
       z-index: -1;
-      @include md{
-        font-size: 24px;
-      }
-      @include xs{
-        font-size: 16px;
-      }
+      
       
       &:nth-child(1){
         // background-image: url("https://picsum.photos/800/600?random=1");
@@ -68,8 +62,7 @@
         color: $primary-color;
         -webkit-background-clip: text;
         background-clip: text;
-        // background-image: url("https://picsum.photos/800/600?random=1");
-        z-index: 99;
+        z-index: 9;
       }
       &::after{
         position: absolute;
@@ -87,10 +80,9 @@
           background-color: rgba(255, 225, 128,0.5);
           transform: scale(0.8);
         }
-        .primary-block__item__link{
-          // color: $active-color;
-          z-index: 99;
+        // .primary-block__item__link{
           
+          // 三角形裝飾
           // &::before{
           //   position: absolute;
           //   content: "";
@@ -101,7 +93,7 @@
           //   border-bottom:30px solid  $active-color;
           //   z-index: 99;
           // }
-        }
+        // }
       }
       
     }

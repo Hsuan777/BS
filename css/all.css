@@ -9,6 +9,23 @@ body {
 .primary-block {
   background-color: #3F5D45;
   color: white;
+  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .primary-block {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 437px) {
+  .primary-block {
+    font-size: 16px;
+  }
+}
+
+.primary-block__item {
+  font-size: 28px;
 }
 
 .secondary-block {
@@ -140,25 +157,12 @@ body {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 32px;
   background-size: cover;
   background-position: center center;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .inner-banner .primary-block__item {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 437px) {
-  .inner-banner .primary-block__item {
-    font-size: 16px;
-  }
 }
 
 .inner-banner .primary-block__item:nth-child(1) {
@@ -177,7 +181,7 @@ body {
   color: #3F5D45;
   -webkit-background-clip: text;
   background-clip: text;
-  z-index: 99;
+  z-index: 9;
 }
 
 .inner-banner .primary-block__item::after {
@@ -200,10 +204,6 @@ body {
   background-color: rgba(255, 225, 128, 0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-}
-
-.inner-banner .primary-block__item:hover .primary-block__item__link {
-  z-index: 99;
 }
 
 .inner-about .secondary-block, footer .secondary-block {

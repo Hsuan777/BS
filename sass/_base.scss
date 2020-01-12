@@ -8,6 +8,17 @@ body{
 .primary-block{
   background-color:$primary-color;
   color: white;
+  font-size: 32px;
+  @include md{
+    font-size: 24px;
+  }
+  @include xs{
+    font-size: 16px;
+  }
+  &__item{
+    font-size: 28px;
+  }
+
   
 }
 .secondary-block{
@@ -25,9 +36,6 @@ body{
   &__body{
     background-color: $primary-bg-color;
   }
-  // &__text{
-
-  // }
 }
 .active--bg{
   background-color: $active-color;
@@ -75,6 +83,5 @@ body{
     }
   }
 }
-
 
 

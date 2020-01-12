@@ -1,43 +1,72 @@
-@mixin hidden_text($width,$height,$bg_url){
-	width: $width;
-	height: $height;
-	text-indent: 101%;
-  	overflow: hidden;
- 	white-space: nowrap;
- 	background-image:$bg_url;
- 	background-repeat: no-repeat; 
+@mixin hidden_text($width, $height, $bg_url) {
+  width: $width;
+  height: $height;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: $bg_url;
+  background-repeat: no-repeat;
 }
-
 
 //@media
-@mixin xs{
-	@media (max-width: 437px) {
-		@content
-	}
+@mixin xs {
+  @media (max-width: 437px) {
+    @content;
+  }
 }
-@mixin sm{
-	@media (max-width: 576px) {
-		@content
-	}
+// @mixin media-breakpoint-up(sm) {
+//   @mixin sm {
+//     @media (max-width: 576px) {
+//       @content;
+//     }
+//   }
+// }
+
+// @include media-breakpoint-up(sm) {
+//   html {
+//     font-size: 1.2rem;
+//   }
+// }
+
+// @include media-breakpoint-up(md) {
+//   html {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 1.6rem;
+//   }
+// }
+
+// @mixin media-breakpoint-up(sm) {
+
+//   }
+
+@mixin sm {
+  @media (max-width: 576px) {
+    @content;
+  }
 }
-@mixin md{
-	@media (max-width: 767px) {
-		@content
-	}
+@mixin md {
+  @media (max-width: 767px) {
+    @content;
+  }
 }
-@mixin lg{
-	@media (max-width: 1024px) {
-		@content
-	}
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
 }
-@mixin iPhone_Plus{
-	@media (max-width: 414px) {
-		@content
-	}
+@mixin iPhone_Plus {
+  @media (max-width: 414px) {
+    @content;
+  }
 }
 
-@mixin iPhone5{
-	@media (max-width: 320px) {
-		@content		
-	}
+@mixin iPhone5 {
+  @media (max-width: 320px) {
+    @content;
+  }
 }
