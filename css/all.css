@@ -9,23 +9,28 @@ body {
 .primary-block {
   background-color: #3F5D45;
   color: white;
+}
+
+.primary-block__item {
   font-size: 32px;
 }
 
 @media (max-width: 767px) {
-  .primary-block {
+  .primary-block__item {
+    font-size: 28.8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .primary-block__item {
     font-size: 24px;
   }
 }
 
 @media (max-width: 437px) {
-  .primary-block {
-    font-size: 16px;
+  .primary-block__item {
+    font-size: 19.2px;
   }
-}
-
-.primary-block__item {
-  font-size: 28px;
 }
 
 .secondary-block {
@@ -35,6 +40,25 @@ body {
 
 .secondary-block__title {
   color: #3F5D45;
+  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .secondary-block__title {
+    font-size: 28.8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .secondary-block__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 437px) {
+  .secondary-block__title {
+    font-size: 19.2px;
+  }
 }
 
 .secondary-block__link {
@@ -47,6 +71,28 @@ body {
 
 .secondary-block__body {
   background-color: #EEE;
+}
+
+.secondary-block__text {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .secondary-block__text {
+    font-size: 17.6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .secondary-block__text {
+    font-size: 19.2px;
+  }
+}
+
+@media (max-width: 437px) {
+  .secondary-block__text {
+    font-size: 20.8px;
+  }
 }
 
 .active--bg {
@@ -246,7 +292,6 @@ body {
 }
 
 .inner-about .secondary-block__title, footer .secondary-block__title {
-  font-size: 35px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -258,17 +303,10 @@ body {
 
 @media (max-width: 767px) {
   .inner-about .secondary-block__title, footer .secondary-block__title {
-    font-size: 20px;
     color: #d1a71c;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
-  }
-}
-
-@media (max-width: 437px) {
-  .inner-about .secondary-block__title, footer .secondary-block__title {
-    font-size: 16px;
   }
 }
 
@@ -311,7 +349,6 @@ body {
           writing-mode: vertical-rl;
   line-height: 2.5;
   max-height: 400px;
-  font-size: 18px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
@@ -321,7 +358,6 @@ body {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
-    font-size: 18px;
     color: #3F5D45;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50px 20px 50px 20px;

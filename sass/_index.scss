@@ -24,7 +24,6 @@
   }
   &__success{
     background-image: url("https://images.unsplash.com/photo-1547549082-6bc09f2049ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
-
   }
   .primary-block{
     background-color: rgba(0,0,0,0.2);
@@ -44,8 +43,6 @@
       position: relative;
       transition: 0.3s;
       z-index: -1;
-      
-      
       &:nth-child(1){
         // background-image: url("https://picsum.photos/800/600?random=1");
         background-image: url("https://bit.ly/2zBDAxX");
@@ -80,25 +77,9 @@
           background-color: rgba(255, 225, 128,0.5);
           transform: scale(0.8);
         }
-        // .primary-block__item__link{
-          
-          // 三角形裝飾
-          // &::before{
-          //   position: absolute;
-          //   content: "";
-          //   right:0;
-          //   bottom: -1px;
-          //   border-left:30px solid  transparent;
-          //   border-right:30px solid  transparent;
-          //   border-bottom:30px solid  $active-color;
-          //   z-index: 99;
-          // }
-        // }
       }
-      
     }
   }
-  
 }
 
 .inner-about, footer{
@@ -108,12 +89,10 @@
     margin-bottom: 150px;
     @include md{
       writing-mode:horizontal-tb;
-      // transform: translateY(50px);
       padding-bottom: 60px;
       margin-top: 50px;
       margin-bottom: 50px;
     }
-    
     &::before{
       position: absolute;
       content: "";
@@ -135,23 +114,14 @@
       z-index: -1;
     }
     &__title{
-      // 主標題區塊
-      // 副標題，這裡的是副標題
-      // 問題是，首頁的副標題要如何區隔
-      font-size: 35px;
       writing-mode:vertical-lr;
       position: relative;
       line-height: 0;
       transform: translateY(-20px);
       @include md{
-        font-size: 20px;
         color: rgb(209, 167, 28);
         writing-mode:horizontal-tb;
       }
-      @include xs{
-        font-size: 16px;
-      }
-      
       span{
         writing-mode: horizontal-tb;
         line-height: 1;
@@ -181,18 +151,13 @@
       writing-mode:vertical-rl;
       line-height: 2.5;
       max-height: 400px;
-      font-size: 18px;
-      
       transform: translateY(20px);
       @include md{
         writing-mode:horizontal-tb;
-        font-size: 18px;
         color:$primary-color;
         background-color:rgba(255,255,255,0.5);
         border-radius: 50px 20px 50px 20px;
       }
-      
-      
     }
     &__img{
       background-repeat: no-repeat;

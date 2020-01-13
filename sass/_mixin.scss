@@ -8,42 +8,27 @@
   background-repeat: no-repeat;
 }
 
+// 三角形裝飾
+// &::before{
+//   position: absolute;
+//   content: "";
+//   right:0;
+//   bottom: -1px;
+//   border-left:30px solid  transparent;
+//   border-right:30px solid  transparent;
+//   border-bottom:30px solid  $active-color;
+//   z-index: 99;
+// }
+
 //@media
+
+
+
 @mixin xs {
   @media (max-width: 437px) {
     @content;
   }
 }
-// @mixin media-breakpoint-up(sm) {
-//   @mixin sm {
-//     @media (max-width: 576px) {
-//       @content;
-//     }
-//   }
-// }
-
-// @include media-breakpoint-up(sm) {
-//   html {
-//     font-size: 1.2rem;
-//   }
-// }
-
-// @include media-breakpoint-up(md) {
-//   html {
-//     font-size: 1.4rem;
-//   }
-// }
-
-// @include media-breakpoint-up(lg) {
-//   html {
-//     font-size: 1.6rem;
-//   }
-// }
-
-// @mixin media-breakpoint-up(sm) {
-
-//   }
-
 @mixin sm {
   @media (max-width: 576px) {
     @content;
@@ -70,3 +55,30 @@
     @content;
   }
 }
+
+
+@mixin responsive__title{
+  font-size: $font-size*2;
+  @include md{
+    font-size: $font-size*1.8;
+  }
+  @include sm{
+    font-size: $font-size*1.5;
+  }
+  @include xs{
+    font-size: $font-size*1.2;
+  }
+}
+@mixin responsive__text{
+  font-size: $font-size;
+  @include md{
+    font-size: $font-size*1.1;
+  }
+  @include sm{
+    font-size: $font-size*1.2;
+  }
+  @include xs{
+    font-size: $font-size*1.3;
+  }
+}
+

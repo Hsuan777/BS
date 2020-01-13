@@ -8,24 +8,16 @@ body{
 .primary-block{
   background-color:$primary-color;
   color: white;
-  font-size: 32px;
-  @include md{
-    font-size: 24px;
-  }
-  @include xs{
-    font-size: 16px;
-  }
   &__item{
-    font-size: 28px;
+    @include responsive__title;
   }
-
-  
 }
 .secondary-block{
   background-color:$secondary-bg-color;
   color: $secondary-color;
   &__title{
     color: $primary-color;
+    @include responsive__title;
   }
   &__link{
     color: $secondary-color;
@@ -35,6 +27,9 @@ body{
   }
   &__body{
     background-color: $primary-bg-color;
+  }
+  &__text{
+    @include responsive__text;
   }
 }
 .active--bg{
