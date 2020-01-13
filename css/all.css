@@ -17,19 +17,13 @@ body {
 
 @media (max-width: 767px) {
   .primary-block__item {
-    font-size: 28.8px;
+    font-size: 25.6px;
   }
 }
 
 @media (max-width: 576px) {
   .primary-block__item {
     font-size: 24px;
-  }
-}
-
-@media (max-width: 437px) {
-  .primary-block__item {
-    font-size: 19.2px;
   }
 }
 
@@ -45,19 +39,13 @@ body {
 
 @media (max-width: 767px) {
   .secondary-block__title {
-    font-size: 28.8px;
+    font-size: 25.6px;
   }
 }
 
 @media (max-width: 576px) {
   .secondary-block__title {
     font-size: 24px;
-  }
-}
-
-@media (max-width: 437px) {
-  .secondary-block__title {
-    font-size: 19.2px;
   }
 }
 
@@ -74,24 +62,24 @@ body {
 }
 
 .secondary-block__text {
-  font-size: 16px;
+  font-size: 20.8px;
 }
 
 @media (max-width: 767px) {
-  .secondary-block__text {
-    font-size: 17.6px;
-  }
-}
-
-@media (max-width: 576px) {
   .secondary-block__text {
     font-size: 19.2px;
   }
 }
 
+@media (max-width: 576px) {
+  .secondary-block__text {
+    font-size: 17.6px;
+  }
+}
+
 @media (max-width: 437px) {
   .secondary-block__text {
-    font-size: 20.8px;
+    font-size: 16px;
   }
 }
 
@@ -164,7 +152,7 @@ body {
 
 @media (max-width: 437px) {
   .inner-banner__index {
-    margin-bottom: 130px;
+    margin-bottom: 150px;
   }
 }
 
@@ -265,7 +253,13 @@ body {
             writing-mode: horizontal-tb;
     padding-bottom: 60px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 437px) {
+  .inner-about .secondary-block, footer .secondary-block {
+    margin-bottom: 75px;
   }
 }
 
@@ -303,7 +297,7 @@ body {
 
 @media (max-width: 767px) {
   .inner-about .secondary-block__title, footer .secondary-block__title {
-    color: #d1a71c;
+    line-height: 1.2;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
@@ -335,11 +329,10 @@ body {
 
 @media (max-width: 767px) {
   .inner-about .secondary-block__title--after::after, footer .secondary-block__title--after::after {
-    width: 70px;
+    width: 50px;
     height: 2px;
     top: 50%;
     right: -35px;
-    background-color: #d1a71c;
   }
 }
 
@@ -359,7 +352,7 @@ body {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     color: #3F5D45;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 225, 128, 0.3);
     border-radius: 50px 20px 50px 20px;
   }
 }
@@ -415,18 +408,18 @@ body {
 }
 
 .inner-product__item__text {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
   .inner-product__item__text {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-@media (max-width: 437px) {
+@media (max-width: 576px) {
   .inner-product__item__text {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 

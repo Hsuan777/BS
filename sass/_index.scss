@@ -13,7 +13,7 @@
       margin-bottom: 180px;
     }
     @include xs{
-      margin-bottom: 130px;
+      margin-bottom: 150px;
     }
   }
   &__product{
@@ -91,7 +91,10 @@
       writing-mode:horizontal-tb;
       padding-bottom: 60px;
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
+    }
+    @include xs{
+      margin-bottom: 75px;
     }
     &::before{
       position: absolute;
@@ -119,9 +122,11 @@
       line-height: 0;
       transform: translateY(-20px);
       @include md{
-        color: rgb(209, 167, 28);
+        line-height: 1.2;
+        // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
       }
+      
       span{
         writing-mode: horizontal-tb;
         line-height: 1;
@@ -138,11 +143,11 @@
           right:0;
           transform: translate(70%, 20%);
           @include md{
-            width: 70px;
+            width: 50px;
             height: 2px;
             top: 50%;
             right:-35px;
-            background-color:rgb(209, 167, 28) ;
+            // background-color:rgb(209, 167, 28) ;
           }
         }
       }
@@ -155,7 +160,7 @@
       @include md{
         writing-mode:horizontal-tb;
         color:$primary-color;
-        background-color:rgba(255,255,255,0.5);
+        background-color:rgba(255, 225, 128,0.3);
         border-radius: 50px 20px 50px 20px;
       }
     }
@@ -286,13 +291,14 @@
       border-radius: 0 0 3px 3px;
     }
     &__text{
-      font-size: 28px; 
+      font-size: 24px; 
       @include md{
-        font-size: 16px;
+        font-size: 20px;
       } 
-      @include xs{
-        font-size: 12px;
-      }
+      @include sm{
+        font-size: 18px;
+      } 
+      
     }
   }
   .item-coffee{
