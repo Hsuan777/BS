@@ -5,6 +5,9 @@ body{
   color: $primary-color;
   background-color:$primary-bg-color;
 }
+// TODO:如何客製主要背景顏色，bg-主要、bg-次要
+// 主要次要區塊太模糊，login主要區塊會是甚麼? 次要區塊會是甚麼?
+// 若社群帳號為主要區塊不就GG了
 .primary-block{
   background-color:$primary-color;
   color: white;
@@ -32,9 +35,11 @@ body{
     @include responsive__text;
   }
 }
+// TODO:如何客製按鈕配色
 .active--bg{
   background-color: $active-color;
 }
+// TODO:圓點進度條要放在哪裡? mixin? base? 客製化元件?
 .progress-round{
   &__list{
     li{

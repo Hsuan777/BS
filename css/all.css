@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.bg-primary-block {
+  background-color: #3F5D45;
+}
+
+.bg-secondary-block {
+  background-color: #8DA291;
+}
+
 body {
   font-size: 16px;
   font-family: "Noto Sans TC", sans-serif;
@@ -252,8 +260,9 @@ body {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     padding-bottom: 60px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    background-color: transparent;
   }
 }
 
@@ -301,6 +310,7 @@ body {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
+    color: #8DA291;
   }
 }
 
@@ -333,6 +343,7 @@ body {
     height: 2px;
     top: 50%;
     right: -35px;
+    background-color: #8DA291;
   }
 }
 
@@ -352,7 +363,7 @@ body {
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     color: #3F5D45;
-    background-color: rgba(255, 225, 128, 0.3);
+    background-color: rgba(234, 240, 237, 0.7);
     border-radius: 50px 20px 50px 20px;
   }
 }

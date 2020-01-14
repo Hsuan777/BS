@@ -90,8 +90,9 @@
     @include md{
       writing-mode:horizontal-tb;
       padding-bottom: 60px;
-      margin-top: 50px;
-      margin-bottom: 100px;
+      margin-top: 25px;
+      margin-bottom: 80px;
+      background-color: transparent;
     }
     @include xs{
       margin-bottom: 75px;
@@ -125,6 +126,7 @@
         line-height: 1.2;
         // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
+        color: $secondary-color;
       }
       
       span{
@@ -147,7 +149,7 @@
             height: 2px;
             top: 50%;
             right:-35px;
-            // background-color:rgb(209, 167, 28) ;
+            background-color:$secondary-color ;
           }
         }
       }
@@ -160,7 +162,8 @@
       @include md{
         writing-mode:horizontal-tb;
         color:$primary-color;
-        background-color:rgba(255, 225, 128,0.3);
+        // background-color:rgba(255, 225, 128,0.3);
+        background-color:rgba(234, 240, 237,0.7);
         border-radius: 50px 20px 50px 20px;
       }
     }

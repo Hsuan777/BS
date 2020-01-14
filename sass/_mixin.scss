@@ -57,6 +57,7 @@
 }
 
 
+
 @mixin responsive__title{
   font-size: $font-size*2;
   @include md{
@@ -80,3 +81,14 @@
   }
 }
 
+
+
+$block-colors:(
+  primary : $primary-block-color,
+  secondary : $secondary-block-color
+);
+@each $name, $block-color in $block-colors {
+  .bg-#{$name}-block{
+    background-color:$block-color ;
+  }
+}
