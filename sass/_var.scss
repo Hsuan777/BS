@@ -36,7 +36,7 @@ $colorList:(
   .bg-#{$name}{
     background-color:$color;
   }
-  .text-#{$name}{
+  .text-#{$name}-ex{
     color:$color ;
   }
 }
