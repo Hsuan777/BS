@@ -2,86 +2,48 @@
 body{
   font-size: $font-size;
   font-family: $font-family;
-  color: $primary-color;
-  background-color:$primary-bg-color;
+  color: $info;
+  background-color:$default;
 }
-// TODO:如何客製主要背景顏色，bg-主要、bg-次要
+ 
+
+// TODO:如何客製主要背景顏色，bg-主要、bg-次要 
 // 主要次要區塊太模糊，login主要區塊會是甚麼? 次要區塊會是甚麼?
 // 若社群帳號為主要區塊不就GG了
+// 區塊目的 -> 讓不同 inner-? 識別區塊
+// OOCSS  -> bg-? 、btn-大小 、btn-顏色 
+// SMACSS -> btn-primary 
 .primary-block{
-  background-color:$primary-color;
+  // background-color:$primary;
   color: white;
   &__item{
     @include responsive__title;
   }
 }
 .secondary-block{
-  background-color:$secondary-bg-color;
-  color: $secondary-color;
+  background-color:$secondary;
   &__title{
-    color: $primary-color;
+    color: $primary;
     @include responsive__title;
   }
   &__link{
-    color: $secondary-color;
+    color: $secondary;
     &:hover{
       text-decoration: none;
     }
   }
-  &__body{
-    background-color: $primary-bg-color;
-  }
+  // &__body{
+  //   background-color: $default;
+  // }
   &__text{
     @include responsive__text;
   }
 }
-// TODO:如何客製按鈕配色
-.active--bg{
-  background-color: $active-color;
-}
-// TODO:圓點進度條要放在哪裡? mixin? base? 客製化元件?
-.progress-round{
-  &__list{
-    li{
-      position: relative;
-      width: 15px;
-      height: 15px;
-      font-size: 9px;
-      color:white ;
-      border-radius: 50%;
-      border: 1px solid $primary-color ;
-      background-color: white ;
-      box-shadow: 0px 0px  0px 1px white;
-      + li{
-        &::before{
-          position: absolute;
-          content:"";
-          top: 50%;
-          left: -60px;
-          width:58px ;
-          height: 1px;
-          border:1px solid $secondary-color;
-          background-color: $secondary-color;
-        }
-      }
-      &.active{
-        ~ li{
-          box-shadow: 0px 0px  0px 1px  $secondary-color;
-          background-color: transparent ;
-          &::before{
-            background-color: $secondary-color;
-          }
-        }
-      }
-      &.check{
-      border: none;
-      color: $primary-color ;
-        .fa-check{
-          transform: translate(2px,-1px);
-        }
-      }
-    }
-  }
-}
+// TODO:如何客製按鈕配色 btn-submit
+// .active--bg{
+//   background-color: $submit;
+// }
+
+
 
 

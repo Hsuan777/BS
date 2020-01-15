@@ -20,10 +20,51 @@
 //   z-index: 99;
 // }
 
+.progress-round{
+  &__list{
+    li{
+      position: relative;
+      width: 15px;
+      height: 15px;
+      font-size: 9px;
+      color:white ;
+      border-radius: 50%;
+      border: 1px solid $primary ;
+      background-color: white ;
+      box-shadow: 0px 0px  0px 1px white;
+      + li{
+        &::before{
+          position: absolute;
+          content:"";
+          top: 50%;
+          left: -60px;
+          width:58px ;
+          height: 1px;
+          border:1px solid $secondary;
+          background-color: $secondary;
+        }
+      }
+      &.active{
+        ~ li{
+          box-shadow: 0px 0px  0px 1px  $secondary;
+          background-color: transparent ;
+          &::before{
+            background-color: $secondary;
+          }
+        }
+      }
+      &.check{
+      border: none;
+      color: $primary ;
+        .fa-check{
+          transform: translate(2px,-1px);
+        }
+      }
+    }
+  }
+}
+
 //@media
-
-
-
 @mixin xs {
   @media (max-width: 437px) {
     @content;
@@ -56,8 +97,6 @@
   }
 }
 
-
-
 @mixin responsive__title{
   font-size: $font-size*2;
   @include md{
@@ -83,12 +122,3 @@
 
 
 
-$block-colors:(
-  primary : $primary-block-color,
-  secondary : $secondary-block-color
-);
-@each $name, $block-color in $block-colors {
-  .bg-#{$name}-block{
-    background-color:$block-color ;
-  }
-}

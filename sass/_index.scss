@@ -1,4 +1,44 @@
 @import "var";
+// TODO: SASS / CSS 架構管理檢核表 
+// 類別階層不超過四層為原則
+// 不使用 ID，一律使用 class
+// 使用 OOCSS 建立類別工具庫
+// 使用 SMACSS 來建立 Sass 結構
+// 排版結構以 BEM 來開發
+// 導入 BS4 的 Grid System
+// 使用 Sass for 來管理擴充元件
+// 一率採用小駝峰式命名
+// 導入第三方插件在 Sass import vendor
+// 使用 REM 單位
+// 佈局使用 flexbox 進行元件設計
+
+// TODO:檢視架構與命名
+// .inner-banner不同頁面可做圖片設定
+// 同一頁面只有一個主要區塊與多個次要區塊
+// 區塊在 base.scss預先處理子區域
+// 區塊子區域可無限擴增，若重複性高寫在 base.scss
+// .inner-banner{
+//   &__index{
+//     .primary-block{
+//       &__list{}
+//       &__item{}
+//       &__link{}
+//     }
+//   }
+//   &__product{}
+//   &__cart{}
+//   &__about{}
+// }
+// .inner-about{
+//   .secondary-block{
+//     &__title{}
+//     &__text{}
+//     &__img{}
+//     &__imgItem-1{}
+//     &__imgItem-2{}
+//     &__imgItem-2-1{}
+//   }
+// }
 .inner-banner{
   background-repeat: no-repeat;
   background-position: center center;
@@ -56,7 +96,6 @@
         background-image: url("https://bit.ly/2Qodh3Z");
       }
       &__link{
-        color: $primary-color;
         -webkit-background-clip: text;
         background-clip: text;
         z-index: 9;
@@ -104,7 +143,7 @@
       height: 5%;
       top: 0;
       left: 0;
-      background-color:$primary-bg-color ;
+      background-color:$primary ;
       z-index: -1;
     }
     &::after{
@@ -114,7 +153,7 @@
       height: 5%;
       bottom: 0;
       left: 0;
-      background-color:$primary-bg-color ;
+      background-color:$primary;
       z-index: -1;
     }
     &__title{
@@ -126,13 +165,14 @@
         line-height: 1.2;
         // transform: translate(70px,-20px);
         writing-mode:horizontal-tb;
-        color: $secondary-color;
       }
       
+      // FIXME:別用 標籤 ，以 class取代，可重複使用
       span{
         writing-mode: horizontal-tb;
         line-height: 1;
       }
+      // FIXME:修飾符號，未想到更好的命名
       &--after{
         position: relative;
         &::after{
@@ -140,7 +180,7 @@
           content: "";
           width: 2px;
           height: 70px;
-          background-color:$primary-color ;
+          background-color:$primary;
           top: 0;
           right:0;
           transform: translate(70%, 20%);
@@ -149,7 +189,7 @@
             height: 2px;
             top: 50%;
             right:-35px;
-            background-color:$secondary-color ;
+            background-color:$secondary ;
           }
         }
       }
@@ -161,7 +201,7 @@
       transform: translateY(20px);
       @include md{
         writing-mode:horizontal-tb;
-        color:$primary-color;
+        color:$primary;
         // background-color:rgba(255, 225, 128,0.3);
         background-color:rgba(234, 240, 237,0.7);
         border-radius: 50px 20px 50px 20px;
@@ -371,7 +411,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary-color;
+        background-color: $secondary;
         top: 55%;
         left: 20px;
       }
@@ -381,7 +421,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary-color;
+        background-color: $secondary;
         top: 55%;
         right: 20px;
       }
@@ -405,7 +445,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary-color;
+        background-color: $secondary;
         top: 55%;
         left: -12px;
       }
@@ -415,7 +455,7 @@
         content: "";
         width: 35px;
         height: 2px;
-        background-color: $secondary-color;
+        background-color: $secondary;
         top: 55%;
         right: -12px;
       }
@@ -429,10 +469,10 @@
     
   }
   &__mail{
-    background-color: $primary-color;
+    background-color: $primary;
   }
   &__info{
-    background-color: $secondary-bg-color;
+    background-color: $secondary;
   }
 }
 .navbar-brand{
